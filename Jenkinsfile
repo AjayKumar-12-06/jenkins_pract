@@ -1,6 +1,6 @@
 pipeline{
-    agent{
-        stages{
+    agent any
+        stages {
             stage('test') {
                 steps{
                     script{
