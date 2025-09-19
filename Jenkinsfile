@@ -1,7 +1,7 @@
 pipeline{
     agent{
         stages{
-            stage('test'){
+            stage('test') {
                 steps{
                     script{
                         
@@ -12,9 +12,9 @@ pipeline{
                 }
 
             }
-            stage('build'){
+            stage('build') {
                 steps{
-                    script{
+                    script {
                         sh """
                             echo "This is build"
                         """
@@ -22,11 +22,11 @@ pipeline{
                 }
 
             }
-            stage('deploy'){
+            stage('deploy') {
                 steps{
                     script{
                         sh """
-                        echo "this is deploy"
+                            echo "this is deploy"
 
                         """
 
